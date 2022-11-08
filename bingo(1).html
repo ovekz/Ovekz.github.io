@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 720px;
+            height: 1200px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: 0 8.3%;
+            align-self: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .carton {
+            /* margin: 4; */
+            border: 1px solid black;
+            width: 602px;
+        }
+
+        .number {
+            background-color: lightblue;
+            width: 120px;
+            height: 40px;
+            border: 1px solid black;
+
+
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            align-content: center;
+            justify-content: center;
+        }
+
+        .name {
+            background-color: lightblue;
+            width: 600px;
+            height: 20px;
+            border: 1px solid black;
+        }
+
+        span {
+            /* margin: auto auto; */
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carton a-1">
+            <div class="name">Bingo Andres</div>
+            <div class="fila a-1">
+                <div class="number"><span id="c1-f1-1"></span></div>
+                <div class="number"><span id="c1-f1-2"></span></div>
+                <div class="number"><span id="c1-f1-3"></span></div>
+                <div class="number"><span id="c1-f1-4"></span></div>
+                <div class="number"><span id="c1-f1-5"></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span id="c1-f2-1"></span></div>
+                <div class="number"><span id="c1-f2-2"></span></div>
+                <div class="number"><span id="c1-f2-3"></span></div>
+                <div class="number"><span id="c1-f2-4"></span></div>
+                <div class="number"><span id="c1-f2-5"></span></div> 
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span id="c1-f3-1"></span></div>
+                <div class="number"><span id="c1-f3-2"></span></div>
+                <div class="number"><span id="c1-f3-3"></span></div>
+                <div class="number"><span id="c1-f3-4"></span></div>
+                <div class="number"><span id="c1-f3-5"></span></div> 
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name">Bingo Andres</div>
+            <div class="fila a-1">
+                <div class="number"><span id="c2-f1-1"></span></div>
+                <div class="number"><span id="c2-f1-2"></span></div>
+                <div class="number"><span id="c2-f1-3"></span></div>
+                <div class="number"><span id="c2-f1-4"></span></div>
+                <div class="number"><span id="c2-f1-5"></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span id="c2-f2-1"></span></div>
+                <div class="number"><span id="c2-f2-2"></span></div>
+                <div class="number"><span id="c2-f2-3"></span></div>
+                <div class="number"><span id="c2-f2-4"></span></div>
+                <div class="number"><span id="c2-f2-5"></span></div> 
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span id="c2-f3-1"></span></div>
+                <div class="number"><span id="c2-f3-2"></span></div>
+                <div class="number"><span id="c2-f3-3"></span></div>
+                <div class="number"><span id="c2-f3-4"></span></div>
+                <div class="number"><span id="c2-f3-5"></span></div> 
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name">Bingo Andres</div>
+            <div class="fila a-1">
+                <div class="number"><span id="c3-f1-1"></span></div>
+                <div class="number"><span id="c3-f1-2"></span></div>
+                <div class="number"><span id="c3-f1-3"></span></div>
+                <div class="number"><span id="c3-f1-4"></span></div>
+                <div class="number"><span id="c3-f1-5"></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span id="c3-f2-1"></span></div>
+                <div class="number"><span id="c3-f2-2"></span></div>
+                <div class="number"><span id="c3-f2-3"></span></div>
+                <div class="number"><span id="c3-f2-4"></span></div>
+                <div class="number"><span id="c3-f2-5"></span></div> 
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span id="c3-f3-1"></span></div>
+                <div class="number"><span id="c3-f3-2"></span></div>
+                <div class="number"><span id="c3-f3-3"></span></div>
+                <div class="number"><span id="c3-f3-4"></span></div>
+                <div class="number"><span id="c3-f3-5"></span></div> 
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name">Bingo Andres</div>
+            <div class="fila a-1">
+                <div class="number"><span id="c4-f1-1"></span></div>
+                <div class="number"><span id="c4-f1-2"></span></div>
+                <div class="number"><span id="c4-f1-3"></span></div>
+                <div class="number"><span id="c4-f1-4"></span></div>
+                <div class="number"><span id="c4-f1-5"></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span id="c4-f2-1"></span></div>
+                <div class="number"><span id="c4-f2-2"></span></div>
+                <div class="number"><span id="c4-f2-3"></span></div>
+                <div class="number"><span id="c4-f2-4"></span></div>
+                <div class="number"><span id="c4-f2-5"></span></div> 
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span id="c4-f3-1"></span></div>
+                <div class="number"><span id="c4-f3-2"></span></div>
+                <div class="number"><span id="c4-f3-3"></span></div>
+                <div class="number"><span id="c4-f3-4"></span></div>
+                <div class="number"><span id="c4-f3-5"></span></div> 
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name">Bingo Andres</div>
+            <div class="fila a-1">
+                <div class="number"><span id="c5-f1-1"></span></div>
+                <div class="number"><span id="c5-f1-2"></span></div>
+                <div class="number"><span id="c5-f1-3"></span></div>
+                <div class="number"><span id="c5-f1-4"></span></div>
+                <div class="number"><span id="c5-f1-5"></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span id="c5-f2-1"></span></div>
+                <div class="number"><span id="c5-f2-2"></span></div>
+                <div class="number"><span id="c5-f2-3"></span></div>
+                <div class="number"><span id="c5-f2-4"></span></div>
+                <div class="number"><span id="c5-f2-5"></span></div> 
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span id="c5-f3-1"></span></div>
+                <div class="number"><span id="c5-f3-2"></span></div>
+                <div class="number"><span id="c5-f3-3"></span></div>
+                <div class="number"><span id="c5-f3-4"></span></div>
+                <div class="number"><span id="c5-f3-5"></span></div> 
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name">Bingo Andres</div>
+            <div class="fila a-1">
+                <div class="number"><span id="c6-f1-1"></span></div>
+                <div class="number"><span id="c6-f1-2"></span></div>
+                <div class="number"><span id="c6-f1-3"></span></div>
+                <div class="number"><span id="c6-f1-4"></span></div>
+                <div class="number"><span id="c6-f1-5"></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span id="c6-f2-1"></span></div>
+                <div class="number"><span id="c6-f2-2"></span></div>
+                <div class="number"><span id="c6-f2-3"></span></div>
+                <div class="number"><span id="c6-f2-4"></span></div>
+                <div class="number"><span id="c6-f2-5"></span></div> 
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span id="c6-f3-1"></span></div>
+                <div class="number"><span id="c6-f3-2"></span></div>
+                <div class="number"><span id="c6-f3-3"></span></div>
+                <div class="number"><span id="c6-f3-4"></span></div>
+                <div class="number"><span id="c6-f3-5"></span></div> 
+            </div>
+        </div>
+        <!-- <div class="carton a-1">
+            <div class="name"></div>
+            <div class="fila a-1">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name"></div>
+            <div class="fila a-1">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name"></div>
+            <div class="fila a-1">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name"></div>
+            <div class="fila a-1">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+        </div>
+        <div class="carton a-1">
+            <div class="name"></div>
+            <div class="fila a-1">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>  
+            </div>
+            <div class="fila a-2">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+            <div class="fila a-3">
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+                <div class="number"><span></span></div>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        var carton1 = []
+    var lista = []
+    var i = 0
+    for (x = 0; x < 3; x++) {
+        while (i < 5) {
+            var randomNumber = Math.floor(Math.random()* 90 + 1)
+            if (!lista.includes(randomNumber)) {
+                lista.push(randomNumber);
+                i++
+            }
+        }
+        carton1.push(lista.slice(-5).sort((a, b) => a - b))
+        i = 0
+    }
+
+    var carton2 = []
+    var lista = []
+    var i = 0
+    for (x = 0; x < 3; x++) {
+        while (i < 5) {
+            var randomNumber = Math.floor(Math.random()* 90 + 1)
+            if (!lista.includes(randomNumber)) {
+                lista.push(randomNumber);
+                i++
+            }
+        }
+        carton2.push(lista.slice(-5).sort((a, b) => a - b))
+        i = 0
+    }
+    var carton3 = []
+    var lista = []
+    var i = 0
+    for (x = 0; x < 3; x++) {
+        while (i < 5) {
+            var randomNumber = Math.floor(Math.random()* 90 + 1)
+            if (!lista.includes(randomNumber)) {
+                lista.push(randomNumber);
+                i++
+            }
+        }
+        carton3.push(lista.slice(-5).sort((a, b) => a - b))
+        i = 0
+    }
+
+    var carton4 = []
+    var lista = []
+    var i = 0
+    for (x = 0; x < 3; x++) {
+        while (i < 5) {
+            var randomNumber = Math.floor(Math.random()* 90 + 1)
+            if (!lista.includes(randomNumber)) {
+                lista.push(randomNumber);
+                i++
+            }
+        }
+        carton4.push(lista.slice(-5).sort((a, b) => a - b))
+        i = 0
+    }
+
+    var carton5 = []
+    var lista = []
+    var i = 0
+    for (x = 0; x < 3; x++) {
+        while (i < 5) {
+            var randomNumber = Math.floor(Math.random()* 90 + 1)
+            if (!lista.includes(randomNumber)) {
+                lista.push(randomNumber);
+                i++
+            }
+        }
+        carton5.push(lista.slice(-5).sort((a, b) => a - b))
+        i = 0
+    }
+
+    var carton6 = []
+    var lista = []
+    var i = 0
+    for (x = 0; x < 3; x++) {
+        while (i < 5) {
+            var randomNumber = Math.floor(Math.random()* 90 + 1)
+            if (!lista.includes(randomNumber)) {
+                lista.push(randomNumber);
+                i++
+            }
+        }
+        carton6.push(lista.slice(-5).sort((a, b) => a - b))
+        i = 0
+    }
+
+    var c1F1C1 = document.getElementById("c1-f1-1")
+    c1F1C1.innerText = carton1[0][0]
+    var c1F1C2 = document.getElementById("c1-f1-2")
+    c1F1C2.innerText = carton1[0][1]
+    var c1F1C3 = document.getElementById("c1-f1-3")
+    c1F1C3.innerText = carton1[0][2]
+    var c1F1C4 = document.getElementById("c1-f1-4")
+    c1F1C4.innerText = carton1[0][3]
+    var c1F1C5 = document.getElementById("c1-f1-5")
+    c1F1C5.innerText = carton1[0][4]
+    var c1F2C1 = document.getElementById("c1-f2-1")
+    c1F2C1.innerText = carton1[1][0]
+    var c1F2C2 = document.getElementById("c1-f2-2")
+    c1F2C2.innerText = carton1[1][1]
+    var c1F2C3 = document.getElementById("c1-f2-3")
+    c1F2C3.innerText = carton1[1][2]
+    var c1F2C4 = document.getElementById("c1-f2-4")
+    c1F2C4.innerText = carton1[1][3]
+    var c1F2C5 = document.getElementById("c1-f2-5")
+    c1F2C5.innerText = carton1[1][4]
+    var c1F3C1 = document.getElementById("c1-f3-1")
+    c1F3C1.innerText = carton1[2][0]
+    var c1F3C2 = document.getElementById("c1-f3-2")
+    c1F3C2.innerText = carton1[2][1]
+    var c1F3C3 = document.getElementById("c1-f3-3")
+    c1F3C3.innerText = carton1[2][2]
+    var c1F3C4 = document.getElementById("c1-f3-4")
+    c1F3C4.innerText = carton1[2][3]
+    var c1F3C5 = document.getElementById("c1-f3-5")
+    c1F3C5.innerText = carton1[2][4]
+
+    var c2F1C1 = document.getElementById("c2-f1-1")
+    c2F1C1.innerText = carton2[0][0]
+    var c2F1C2 = document.getElementById("c2-f1-2")
+    c2F1C2.innerText = carton2[0][1]
+    var c2F1C3 = document.getElementById("c2-f1-3")
+    c2F1C3.innerText = carton2[0][2]
+    var c2F1C4 = document.getElementById("c2-f1-4")
+    c2F1C4.innerText = carton2[0][3]
+    var c2F1C5 = document.getElementById("c2-f1-5")
+    c2F1C5.innerText = carton2[0][4]
+    var c2F2C1 = document.getElementById("c2-f2-1")
+    c2F2C1.innerText = carton2[1][0]
+    var c2F2C2 = document.getElementById("c2-f2-2")
+    c2F2C2.innerText = carton2[1][1]
+    var c2F2C3 = document.getElementById("c2-f2-3")
+    c2F2C3.innerText = carton2[1][2]
+    var c2F2C4 = document.getElementById("c2-f2-4")
+    c2F2C4.innerText = carton2[1][3]
+    var c2F2C5 = document.getElementById("c2-f2-5")
+    c2F2C5.innerText = carton2[1][4]
+    var c2F3C1 = document.getElementById("c2-f3-1")
+    c2F3C1.innerText = carton2[2][0]
+    var c2F3C2 = document.getElementById("c2-f3-2")
+    c2F3C2.innerText = carton2[2][1]
+    var c2F3C3 = document.getElementById("c2-f3-3")
+    c2F3C3.innerText = carton2[2][2]
+    var c2F3C4 = document.getElementById("c2-f3-4")
+    c2F3C4.innerText = carton2[2][3]
+    var c2F3C5 = document.getElementById("c2-f3-5")
+    c2F3C5.innerText = carton2[2][4]
+
+    var c3F1C1 = document.getElementById("c3-f1-1")
+    c3F1C1.innerText = carton3[0][0]
+    var c3F1C2 = document.getElementById("c3-f1-2")
+    c3F1C2.innerText = carton3[0][1]
+    var c3F1C3 = document.getElementById("c3-f1-3")
+    c3F1C3.innerText = carton3[0][2]
+    var c3F1C4 = document.getElementById("c3-f1-4")
+    c3F1C4.innerText = carton3[0][3]
+    var c3F1C5 = document.getElementById("c3-f1-5")
+    c3F1C5.innerText = carton3[0][4]
+    var c3F2C1 = document.getElementById("c3-f2-1")
+    c3F2C1.innerText = carton3[1][0]
+    var c3F2C2 = document.getElementById("c3-f2-2")
+    c3F2C2.innerText = carton3[1][1]
+    var c3F2C3 = document.getElementById("c3-f2-3")
+    c3F2C3.innerText = carton3[1][2]
+    var c3F2C4 = document.getElementById("c3-f2-4")
+    c3F2C4.innerText = carton3[1][3]
+    var c3F2C5 = document.getElementById("c3-f2-5")
+    c3F2C5.innerText = carton3[1][4]
+    var c3F3C1 = document.getElementById("c3-f3-1")
+    c3F3C1.innerText = carton3[2][0]
+    var c3F3C2 = document.getElementById("c3-f3-2")
+    c3F3C2.innerText = carton3[2][1]
+    var c3F3C3 = document.getElementById("c3-f3-3")
+    c3F3C3.innerText = carton3[2][2]
+    var c3F3C4 = document.getElementById("c3-f3-4")
+    c3F3C4.innerText = carton3[2][3]
+    var c3F3C5 = document.getElementById("c3-f3-5")
+    c3F3C5.innerText = carton3[2][4]
+
+var c4F1C1 = document.getElementById("c4-f1-1")
+    c4F1C1.innerText = carton4[0][0]
+    var c4F1C2 = document.getElementById("c4-f1-2")
+    c4F1C2.innerText = carton4[0][1]
+    var c4F1C3 = document.getElementById("c4-f1-3")
+    c4F1C3.innerText = carton4[0][2]
+    var c4F1C4 = document.getElementById("c4-f1-4")
+    c4F1C4.innerText = carton4[0][3]
+    var c4F1C5 = document.getElementById("c4-f1-5")
+    c4F1C5.innerText = carton4[0][4]
+    var c4F2C1 = document.getElementById("c4-f2-1")
+    c4F2C1.innerText = carton4[1][0]
+    var c4F2C2 = document.getElementById("c4-f2-2")
+    c4F2C2.innerText = carton4[1][1]
+    var c4F2C3 = document.getElementById("c4-f2-3")
+    c4F2C3.innerText = carton4[1][2]
+    var c4F2C4 = document.getElementById("c4-f2-4")
+    c4F2C4.innerText = carton4[1][3]
+    var c4F2C5 = document.getElementById("c4-f2-5")
+    c4F2C5.innerText = carton4[1][4]
+    var c4F3C1 = document.getElementById("c4-f3-1")
+    c4F3C1.innerText = carton4[2][0]
+    var c4F3C2 = document.getElementById("c4-f3-2")
+    c4F3C2.innerText = carton4[2][1]
+    var c4F3C3 = document.getElementById("c4-f3-3")
+    c4F3C3.innerText = carton4[2][2]
+    var c4F3C4 = document.getElementById("c4-f3-4")
+    c4F3C4.innerText = carton4[2][3]
+    var c4F3C5 = document.getElementById("c4-f3-5")
+    c4F3C5.innerText = carton4[2][4]
+
+var c5F1C1 = document.getElementById("c5-f1-1")
+    c5F1C1.innerText = carton5[0][0]
+    var c5F1C2 = document.getElementById("c5-f1-2")
+    c5F1C2.innerText = carton5[0][1]
+    var c5F1C3 = document.getElementById("c5-f1-3")
+    c5F1C3.innerText = carton5[0][2]
+    var c5F1C4 = document.getElementById("c5-f1-4")
+    c5F1C4.innerText = carton5[0][3]
+    var c5F1C5 = document.getElementById("c5-f1-5")
+    c5F1C5.innerText = carton5[0][4]
+    var c5F2C1 = document.getElementById("c5-f2-1")
+    c5F2C1.innerText = carton5[1][0]
+    var c5F2C2 = document.getElementById("c5-f2-2")
+    c5F2C2.innerText = carton5[1][1]
+    var c5F2C3 = document.getElementById("c5-f2-3")
+    c5F2C3.innerText = carton5[1][2]
+    var c5F2C4 = document.getElementById("c5-f2-4")
+    c5F2C4.innerText = carton5[1][3]
+    var c5F2C5 = document.getElementById("c5-f2-5")
+    c5F2C5.innerText = carton5[1][4]
+    var c5F3C1 = document.getElementById("c5-f3-1")
+    c5F3C1.innerText = carton5[2][0]
+    var c5F3C2 = document.getElementById("c5-f3-2")
+    c5F3C2.innerText = carton5[2][1]
+    var c5F3C3 = document.getElementById("c5-f3-3")
+    c5F3C3.innerText = carton5[2][2]
+    var c5F3C4 = document.getElementById("c5-f3-4")
+    c5F3C4.innerText = carton5[2][3]
+    var c5F3C5 = document.getElementById("c5-f3-5")
+    c5F3C5.innerText = carton5[2][4]
+
+var c6F1C1 = document.getElementById("c6-f1-1")
+    c6F1C1.innerText = carton6[0][0]
+    var c6F1C2 = document.getElementById("c6-f1-2")
+    c6F1C2.innerText = carton6[0][1]
+    var c6F1C3 = document.getElementById("c6-f1-3")
+    c6F1C3.innerText = carton6[0][2]
+    var c6F1C4 = document.getElementById("c6-f1-4")
+    c6F1C4.innerText = carton6[0][3]
+    var c6F1C5 = document.getElementById("c6-f1-5")
+    c6F1C5.innerText = carton6[0][4]
+    var c6F2C1 = document.getElementById("c6-f2-1")
+    c6F2C1.innerText = carton6[1][0]
+    var c6F2C2 = document.getElementById("c6-f2-2")
+    c6F2C2.innerText = carton6[1][1]
+    var c6F2C3 = document.getElementById("c6-f2-3")
+    c6F2C3.innerText = carton6[1][2]
+    var c6F2C4 = document.getElementById("c6-f2-4")
+    c6F2C4.innerText = carton6[1][3]
+    var c6F2C5 = document.getElementById("c6-f2-5")
+    c6F2C5.innerText = carton6[1][4]
+    var c6F3C1 = document.getElementById("c6-f3-1")
+    c6F3C1.innerText = carton6[2][0]
+    var c6F3C2 = document.getElementById("c6-f3-2")
+    c6F3C2.innerText = carton6[2][1]
+    var c6F3C3 = document.getElementById("c6-f3-3")
+    c6F3C3.innerText = carton6[2][2]
+    var c6F3C4 = document.getElementById("c6-f3-4")
+    c6F3C4.innerText = carton6[2][3]
+    var c6F3C5 = document.getElementById("c6-f3-5")
+    c6F3C5.innerText = carton6[2][4]
+
+    </script>
+</body>
+</html>
